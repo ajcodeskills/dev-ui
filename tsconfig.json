@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "declaration": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "checkJs": false,
+    "allowJs": false,
+    "baseUrl": ".",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "importHelpers": false,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "exclude": ["node_modules","./src/**/*.stories.ts", "./src/**/*.stories.tsx"]
+}
