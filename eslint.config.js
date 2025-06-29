@@ -1,4 +1,3 @@
-// For more info: https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
 
 import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
