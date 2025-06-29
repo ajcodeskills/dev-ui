@@ -1,1 +1,1 @@
-console.log("Dev UI")
+console.log("Dev UI");
