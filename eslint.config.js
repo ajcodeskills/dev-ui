@@ -1,14 +1,22 @@
+// For more info: https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+
+import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
-import tseslint from "typescript-eslint";
+import storybook from "eslint-plugin-storybook";
+import prettier from "eslint-plugin-prettier";
 
-export default tseslint.config(
+export default defineConfig([
+  // Base JS/TS support
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ["**/*.{ts,tsx}"],
+    files: ["**/*.{ts,tsx,js,jsx}"],
     languageOptions: {
+      parser: tseslint.parser,
       parserOptions: {
         ecmaVersion: "latest",
         sourceType: "module",
@@ -16,11 +24,13 @@ export default tseslint.config(
           jsx: true,
         },
       },
+      globals: globals.browser,
     },
     plugins: {
-      prettier: require("eslint-plugin-prettier"),
       react,
       "react-hooks": reactHooks,
+      storybook,
+      prettier,
     },
     rules: {
       "no-unused-vars": "off",
@@ -32,8 +42,8 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/explicit-module-boundary-types": "off",
-      "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "prettier/prettier": "warn",
@@ -44,5 +54,8 @@ export default tseslint.config(
         version: "detect",
       },
     },
-  }
-);
+  },
+
+  // Optional: Storybook rules
+  storybook.configs["flat/recommended"],
+]);

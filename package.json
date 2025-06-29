@@ -7,6 +7,8 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "vite build",
+    "start": "storybook dev -p 6007",
+    "build-storybook": "storybook build",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "lint-staged": "lint-staged",
@@ -23,18 +25,29 @@
     ]
   },
   "devDependencies": {
-    "@eslint/js": "9.30.0",
+    "@eslint/js": "^9.30.0",
+    "@storybook/addon-essentials": "7.5.1",
+    "@storybook/blocks": "7.5.1",
+    "@storybook/react": "7.5.1",
+    "@storybook/react-vite": "7.5.1",
     "@types/bun": "latest",
     "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
     "@vitejs/plugin-react": "4.6.0",
-    "eslint": "9.30.0",
-    "eslint-plugin-prettier": "^5.5.1",
-    "eslint-plugin-react": "7.37.5",
+    "eslint": "^9.30.0",
+    "eslint-plugin-prettier": "5.5.1",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-storybook": "9.0.14",
+    "globals": "^16.2.0",
     "husky": "9.1.7",
-    "lint-staged": "^16.1.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "lint-staged": "16.1.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "storybook": "7.5.1",
+    "storybook-addon-themes": "6.1.0",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3",
     "vite": "7.0.0"
   },
   "peerDependencies": {
@@ -43,7 +56,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "4.1.11",
+    "tailwind-merge": "3.3.1",
     "tailwindcss": "4.1.11",
-    "typescript-eslint": "8.35.0"
+    "typescript-eslint": "^8.35.0"
   }
 }
