@@ -1,11 +1,12 @@
 /** @type { import('@storybook/react').Preview } */
-import '../src/theme/main.css';
-import '../src/theme/dark.css';
+import "../src/theme/main.css";
+import "../src/theme/dark.css";
+import React from "react";
 
 const preview = {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
-    layout: 'fullscreen',
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    layout: "fullscreen",
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -14,11 +15,11 @@ const preview = {
     },
     backgrounds: { disable: true },
     themes: {
-      default: 'light',
+      default: "light",
       clearable: false,
       list: [
-        { name: 'light', class: '' },
-        { name: 'dark', class: 'dark' },
+        { name: "light", class: "" },
+        { name: "dark", class: "dark" },
       ],
     },
   },
@@ -27,8 +28,9 @@ const preview = {
       return (
         <div
           className={
-            viewMode === 'docs' ? 'bg-primary p-4' : 'h-screen bg-primary p-4'
-          }>
+            viewMode === "docs" ? "bg-primary p-4" : "h-screen bg-primary p-4"
+          }
+        >
           <Story />
         </div>
       );

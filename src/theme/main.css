@@ -1,0 +1,280 @@
+/* third-party or override styles */
+@import "react-day-picker/src/style.css";
+@import "../styles/day-picker.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+
+:root,
+.light {
+  color-scheme: light;
+
+  /* ----------- Text colors ----------- */
+
+  --primary-text: 24 24 27; /* #18181b */
+  --primary-text-hover: 64 64 79; /* #40404f */
+
+  --secondary-text: 100 116 139; /* #64748b */
+  --secondary-text-hover: 79 94 115; /* #4f5e73 */
+
+  --tertiary-text: 168 171 178; /* #a8abb2 */
+  --tertiary-text-hover: 152 156 164; /* #989ca4 */
+
+  --primary-brand-text: 255 255 255; /* #ffffff */
+  --primary-brand-text-hover: 232 234 237; /* #e8eaed */
+
+  --error-text: 239 68 68; /* #ef4444 */
+  --error-text-hover: 239 68 68; /* #ef4444 */
+
+  --success-text: 5 150 105; /* #059669 */
+  --success-text-hover: 4 120 87; /* #047867 */
+
+  --warning-text: 217 119 6; /* #d97706 */
+  --warning-text-hover: 217 119 6; /* #d97706 */
+
+  /* ----------- Background colors ----------- */
+
+  --primary-bg: 255 255 255; /* #ffffff */
+  --primary-bg-hover: 232 234 237; /* #e8eaed */
+
+  --secondary-bg: 243 244 246; /* #f3f4f6 */
+  --secondary-bg-hover: 232 234 237; /* #e8eaed */
+
+  --tertiary-bg: 229 231 235; /* #e5e7eb */
+  --tertiary-bg-hover: 218 221 225; /* #dadde1 */
+
+  --error-bg-light: 254 242 242; /* #fef2f2 */
+  --error-bg-light-hover: 252 217 217; /* #fcd9d9 */
+
+  --error-bg: 254 202 202; /* #fecaca */
+  --error-bg-hover: 254 202 202; /* #fecaca */
+
+  --error-bg-dark: 239 68 68; /* #ef4444 */
+  --error-bg-dark-hover: 203 50 50; /* #cb3232 */
+
+  --success-bg-light: 236 253 245; /* #ecfdf5 */
+  --success-bg-light-hover: 187 241 215; /* #bbf1d7 */
+
+  --success-bg: 167 243 208; /* #a7f3d0 */
+  --success-bg-hover: 134 238 190; /* #86eebe */
+
+  --success-bg-dark: 16 185 129; /* #10b981 */
+  --success-bg-dark-hover: 14 164 115; /* #0ea473 */
+
+  --warning-bg-light: 255 247 237; /* #fff7ed */
+  --warning-bg-light-hover: 255 247 237; /* #fff7ed */
+
+  --warning-bg: 254 215 170; /* #fed7aa */
+  --warning-bg-hover: 254 215 170; /* #fed7aa */
+
+  --warning-bg-dark: 251 146 60; /* #fb923c */
+  --warning-bg-dark-hover: 251 146 60; /* #fb923c */
+
+  /* ----------- Border colors ----------- */
+
+  --primary-border: 206 210 217; /* #ced2d9 */
+  --primary-border-hover: 206 210 217; /* #ced2d9 */
+
+  --secondary-border: 229 231 235; /* #e5e7eb */
+  --secondary-border-hover: 229 231 235; /* #e5e7eb */
+
+  --tertiary-border: 240 240 240; /* #f0f0f0 */
+  --tertiary-border-hover: 226 226 226; /* #e2e2e2 */
+
+  --error-border: 239 68 68; /* #ef4444 */
+  --error-border-hover: 203 50 50; /* #cb3232 */
+
+  --error-border-light: 254 202 202; /* #fecaca */
+  --error-border-light-hover: 254 202 202; /* #fecaca */
+
+  --success-border: 16 185 129; /* #10b981 */
+  --success-border-hover: 14 164 115; /* #0ea473 */
+
+  --success-border-light: 167 243 208; /* #a7f3d0 */
+  --success-border-light-hover: 167 243 208; /* #a7f3d0 */
+
+  --warning-border: 251 146 60; /* #fb923c */
+  --warning-border-hover: 251 146 60; /* #fb923c */
+
+  --warning-border-light: 254 215 170; /* #fed7aa */
+  --warning-border-light-hover: 254 215 170; /* #fed7aa */
+
+  /* ----------- Brand colors ----------- */
+  --primary-brand: 79 70 229; /* #4f46e5 */
+  --primary-brand-hover: 52 42 225; /* #342ae1 */
+
+  --primary-brand-medium: 221 214 254; /* #ddd6fe */
+  --primary-brand-medium-hover: 205 195 254; /* #cdc3fe */
+
+  --primary-brand-light: 245 243 255; /* #f5f3ff */
+  --primary-brand-light-hover: 234 229 255; /* #eae5ff */
+
+  --secondary-brand: 24 24 27; /* #18181b */
+  --secondary-brand-hover: 64 64 79; /* #40404f */
+
+  --secondary-brand-light: 174 174 183; /* #aeaeb7 */
+  --secondary-brand-light-hover: 147 147 159; /* #93939f */
+
+  /* ----------- Common colors ----------- */
+  --tooltip-bg: 62 62 62; /* #3e3e3e */
+  --overlay: 0, 0, 0, 0.5; /* rgba(0 0 0 0.5) */
+  --overlay-light: 0, 0, 0, 0.2; /* rgba(0 0 0 0.2) */
+  --overlay-dark: 0, 0, 0, 0.8; /* rgba(0 0 0 0.8) */
+
+  --white: 255 255 255; /* #ffffff */
+  --black: 0 0 0; /* #000000 */
+  --grey: 214 214 214; /* #d6d6d6 */
+  --red: 255 0 0; /* #ff0000 */
+  --red-light: 254 202 202; /* #fecaca */
+  --green: 0 255 0; /* #00ff00 */
+  --blue: 0 0 255; /* #0000ff */
+  --yellow: 255 255 0; /* #ffff00 */
+  --orange: 255 165 0; /* #ffa500 */
+  --purple: 128 0 128; /* #800080 */
+
+  --amber: 253 230 138; /* #fde68a */
+  --amber-light: 255 251 235; /* #fffbeb */
+  --brown: 140 67 60; /* #8c433c */
+  --copper: 200 101 50; /* #c86532 */
+  --dark-grey: 107 107 107; /* #6b6b6b */
+  --forest-green: 46 108 62; /* #2e6c3e */
+  --gold: 255 201 65; /* #ffc941 */
+  --light-blue: 119 156 191; /* #779cbf */
+  --light-green: 75 146 94; /* #4b925e */
+  --lime-green: 177 193 80; /* #b1c150 */
+  --navy-blue: 27 91 188; /* #1b5bbc */
+  --orchid: 219 146 212; /* #db92d4 */
+  --periwinkle: 95 94 183; /* #5f5eb7 */
+  --salmon: 255 152 100; /* #ff9864 */
+  --salmon-pink: 223 139 130; /* #df8b82 */
+  --sky-blue: 114 198 255; /* #72c6ff */
+  --slate-blue: 70 105 139; /* #46698b */
+  --spring-green: 123 200 143; /* #7bc88f */
+  --steel-blue: 75 120 146; /* #4b7892 */
+
+  /* ----------- Shadow colors ----------- */
+
+  --shadow-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.24),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  --shadow-2: 0px 2px 4px 0px rgba(0, 0, 0, 0.07),
+    0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+
+  --shadow-2-light: 0px 2px 4px 0px rgba(0, 0, 0, 0.04),
+    0px 3px 6px 0px rgba(0, 0, 0, 0.05);
+
+  --shadow-3: 0px 3px 6px 0px rgba(0, 0, 0, 0.1),
+    0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+
+  --shadow-3-light: 0px 3px 6px 0px rgba(0, 0, 0, 0.07),
+    0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+
+  --shadow-4: 0px 5px 10px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+
+  --shadow-5: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+
+  --shadow-brand: 3px 5px 14px 0px rgba(237, 225, 249);
+}
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.styled-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--grey)) transparent;
+}
+.styled-scrollbar::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.styled-scrollbar:hover::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  background-color: rgb(var(--grey));
+  background-clip: content-box;
+}
+.styled-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 0.375rem;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../styles/fonts/Inter-Black.woff") format("woff");
+}
