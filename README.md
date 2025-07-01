@@ -1,4 +1,4 @@
-# hadev-ui
+# @codekaro/dev-ui
 
 To install dependencies:
 

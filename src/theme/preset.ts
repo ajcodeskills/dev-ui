@@ -275,7 +275,7 @@ const theme = {
 };
 
 const preset = {
-  content: ["./node_modules/hadev-ui/**/*.js"],
+  content: ["./node_modules/@codekaro/dev-ui/**/*.js"],
   darkMode: "class",
   theme,
 };
