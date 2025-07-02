@@ -23,14 +23,14 @@
 
   /* ----------- Background colors ----------- */
 
-  --primary-bg: 17 17 21; /* #111115 */
-  --primary-bg-hover: 55 55 68; /* #373744 */
+  --primary-bg: 18 22 35; /* #121623 */
+  --primary-bg-hover: 25 33 51; /* #192133 */
 
-  --secondary-bg: 41 41 48; /* #292930 */
-  --secondary-bg-hover: 91 91 107; /* #5b5b6b */
+  --secondary-bg: 30 39 61; /* #1E273D */
+  --secondary-bg-hover: 36 46 72; /* #242E48 */
 
-  --tertiary-bg: 115 115 124; /* #73737c */
-  --tertiary-bg-hover: 76 76 82; /* #4c4c52 */
+  --tertiary-bg: 44 58 90; /* #2C3A5A */
+  --tertiary-bg-hover: 36 48 76; /* #24304C */
 
   --error-bg-light: 39 22 26; /* #17161a */
   --error-bg-light-hover: 55 31 37; /* #371f25 */
@@ -92,20 +92,20 @@
 
   /* ----------- Brand colors ----------- */
 
-  --primary-brand: 112 114 252; /* #7a72fc */
-  --primary-brand-hover: 100 90 251; /* #645afb */
+  --primary-brand: 47 101 245; /* #2F65F5 */
+  --primary-brand-hover: 36 77 206; /* #244DCE */
 
-  --primary-brand-medium: 57 59 97; /* #393b61 */
-  --primary-brand-medium-hover: 72 74 122; /* #484a7a */
+  --primary-brand-medium: 103 144 229; /* #6790E5 */
+  --primary-brand-medium-hover: 89 127 212; /* #597FD4 */
 
-  --primary-brand-light: 38 36 67; /* #262443 */
-  --primary-brand-light-hover: 49 46 86; /* #312e56 */
+  --primary-brand-light: 52 75 126; /* #344B7E */
+  --primary-brand-light-hover: 41 61 102; /* #293D66 */
 
-  --secondary-brand: 255 255 255; /* #ffffff */
-  --secondary-brand-hover: 232 234 237; /* #e8e7ed */
+  --secondary-brand: 255 218 215; /* #FFDAD7 */
+  --secondary-brand-hover: 243 195 192; /* #F3C3C0 */
 
-  --secondary-brand-light: 63 60 123; /* #3f3c7b */
-  --secondary-brand-light-hover: 82 78 159; /* #524e9f */
+  --secondary-brand-light: 164 120 117; /* #A47875 */
+  --secondary-brand-light-hover: 137 96 94; /* #89605E */
 
   /* ----------- Common colors ----------- */
   --grey: 90 90 90; /* #5a5a5a */

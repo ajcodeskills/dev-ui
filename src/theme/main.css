@@ -101,20 +101,20 @@
     --warning-border-light-hover: 254 215 170; /* #fed7aa */
 
     /* ----------- Brand colors ----------- */
-    --primary-brand: 79 70 229; /* #4f46e5 */
-    --primary-brand-hover: 52 42 225; /* #342ae1 */
+    --primary-brand: 47 101 245; /* #2F65F5 */
+    --primary-brand-hover: 36 77 206; /* #244DCE */
 
-    --primary-brand-medium: 221 214 254; /* #ddd6fe */
-    --primary-brand-medium-hover: 205 195 254; /* #cdc3fe */
+    --primary-brand-medium: 168 197 253; /* #A8C5FD */
+    --primary-brand-medium-hover: 152 183 250; /* #98B7FA */
 
-    --primary-brand-light: 245 243 255; /* #f5f3ff */
-    --primary-brand-light-hover: 234 229 255; /* #eae5ff */
+    --primary-brand-light: 230 238 254; /* #E6EEFE */
+    --primary-brand-light-hover: 213 227 251; /* #D5E3FB */
 
-    --secondary-brand: 24 24 27; /* #18181b */
-    --secondary-brand-hover: 64 64 79; /* #40404f */
+    --secondary-brand: 92 64 62; /* #5C403E */
+    --secondary-brand-hover: 110 76 74; /* #6E4C4A */
 
-    --secondary-brand-light: 174 174 183; /* #aeaeb7 */
-    --secondary-brand-light-hover: 147 147 159; /* #93939f */
+    --secondary-brand-light: 198 167 165; /* #C6A7A5 */
+    --secondary-brand-light-hover: 175 139 137; /* #AF8B89 */
 
     /* ----------- Common colors ----------- */
     --tooltip-bg: 62 62 62; /* #3e3e3e */
